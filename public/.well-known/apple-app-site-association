@@ -3,7 +3,9 @@
     "details": [
       {
         "appID": "5QG5X8WR5D.org.myApp.sectionListProject",
-        "paths": ["/*"]
+        "paths": [
+          "*"
+        ]
       }
     ]
   }
