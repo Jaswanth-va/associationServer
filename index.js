@@ -13,6 +13,8 @@ app.use(
 );
 
 app.get("/", (req, res) => {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  console.log("User Agent", userAgent);
   res.send("<h1>Association Server</h1>");
   res.end();
 });
