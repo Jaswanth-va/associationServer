@@ -16,15 +16,12 @@ app.get("/", (req, res) => {
   const userAgent = req.get("User-Agent");
   console.log("User Agent", userAgent);
   res.send(`<h1>Association Server ${userAgent}</h1>`);
-  res.end();
 });
 app.get("/home", (req, res) => {
   res.send(`<h1>Home Page</h1>`);
-  res.end();
 });
 app.get("/about", (req, res) => {
   res.send(`<h1>About page</h1>`);
-  res.end();
 });
 app.get("/paypoint-merchant-mobile-app", (req, res) => {
   const ua = req.get("User-Agent") || "";
@@ -42,9 +39,8 @@ app.get("/paypoint-merchant-mobile-app", (req, res) => {
   res.send(
     `<h1>Paypoint merchant mobile app</h1><a href="${downloadLink}">Download</a>`,
   );
-  res.end();
 });
-app.get("/paypoint-merchant-mobile-app/app", (req, res) => {
+app.use("/paypoint-merchant-mobile-app/app", (req, res) => {
   const ua = req.get("User-Agent") || "";
   if (/android/i.test(ua)) {
     return res.redirect(
