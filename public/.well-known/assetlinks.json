@@ -5,6 +5,7 @@
       "namespace": "android_app",
       "package_name": "com.merchant_mobile_app.paypoint",
       "sha256_cert_fingerprints": [
+        "18:DE:1C:E7:4B:F6:E5:1E:37:76:43:4B:1E:5F:AC:17:3D:C3:A3:40:4D:A0:F5:F7:5E:EB:7C:CF:91:1D:42:D3",
         "E2:E5:61:95:AD:81:08:D8:D8:4A:90:7A:E6:F1:1F:B6:E7:4F:14:5A:6E:67:F9:87:B4:E1:0A:06:AF:1F:4A:A5"
       ]
     }
