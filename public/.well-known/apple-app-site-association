@@ -10,6 +10,16 @@
             "/": "/paypoint-merchant-mobile-app/app/*"
           }
         ]
+      },
+      {
+        "appIDs": [
+          "P4E7M6729Y.com.handepay.merchantmobileapp"
+        ],
+        "components": [
+          {
+            "/": "/merchant-mobile-app/app/*"
+          }
+        ]
       }
     ]
   }

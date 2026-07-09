@@ -10,5 +10,17 @@
         "E2:E5:61:95:AD:81:08:D8:D8:4A:90:7A:E6:F1:1F:B6:E7:4F:14:5A:6E:67:F9:87:B4:E1:0A:06:AF:1F:4A:A5"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.merchant_mobile_app.handepay",
+      "sha256_cert_fingerprints": [
+        "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C",
+        "A5:D0:AE:60:D4:57:9B:0E:78:B7:09:9D:23:BC:8C:35:B4:3E:79:45:F3:18:AB:73:6D:46:3E:48:40:10:97:D1",
+        "6B:65:BB:46:CE:42:6E:D6:CD:2D:97:B3:C7:36:F2:C6:33:65:C5:D5:B7:7A:D0:BF:FF:36:48:89:BF:C5:92:49"
+      ]
+    }
   }
 ]
