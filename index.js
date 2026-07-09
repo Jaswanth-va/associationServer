@@ -3,10 +3,14 @@ configDotenv();
 import express from "express";
 import cors from "cors";
 
-const PAYPOINT_PLAY_STORE_LINK = process.env.PAYPOINT_PLAY_STORE;
-const PAYPOINT_APP_STORE_LINK = process.env.PAYPOINT_APP_STORE;
-const HANDEPAY_PLAY_STORE_LINK = process.env.HANDEPAY_PLAY_STORE;
-const HANDEPAY_APP_STORE_LINK = process.env.HANDEPAY_APP_STORE;
+const PAYPOINT_PLAY_STORE_LINK =
+  "https://play.google.com/store/apps/details?id=com.merchant_mobile_app.paypoint&gl=UK";
+const PAYPOINT_APP_STORE_LINK =
+  "https://apps.apple.com/gb/app/paypoint-merchant-mobile-app/id6615070817";
+const HANDEPAY_PLAY_STORE_LINK =
+  "https://play.google.com/store/apps/details?id=com.merchant_mobile_app.handepay&hl=en_GB";
+const HANDEPAY_APP_STORE_LINK =
+  "https://apps.apple.com/gb/app/handepay-merchant-mobile-app/id6618139044";
 
 const app = express();
 app.use(cors());
