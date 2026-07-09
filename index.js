@@ -1,7 +1,9 @@
 import { configDotenv } from "dotenv";
 configDotenv();
+import path from "path";
 import express from "express";
 import cors from "cors";
+import fs from "fs";
 
 const PAYPOINT_PLAY_STORE_LINK =
   "https://play.google.com/store/apps/details?id=com.merchant_mobile_app.paypoint&gl=UK";
@@ -18,6 +20,11 @@ app.use(cors());
 app.use(
   express.static("public", {
     dotfiles: "allow",
+    setHeaders: (res, filePath) => {
+      if (filePath.endsWith("apple-app-site-association")) {
+        res.setHeader("Content-Type", "application/json");
+      }
+    },
   }),
 );
 
