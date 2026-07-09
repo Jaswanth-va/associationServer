@@ -7,7 +7,7 @@
         ],
         "components": [
           {
-            "/": "/paypoint-merchant-mobile-app/app/*"
+            "/": "/*"
           }
         ]
       },
@@ -17,7 +17,7 @@
         ],
         "components": [
           {
-            "/": "/merchant-mobile-app/app/*"
+            "/": "/*"
           }
         ]
       }
