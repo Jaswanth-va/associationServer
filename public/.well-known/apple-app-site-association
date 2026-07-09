@@ -3,21 +3,21 @@
     "details": [
       {
         "appIDs": [
-          "AXJY8ZWA5Q.com.paypoint.merchantmobileapp"
+          "P4E7M6729Y.com.paypoint.merchantmobileapp"
         ],
         "components": [
           {
-            "/": "/*"
+            "/": "/paypoint-merchant-mobile-app/app/*"
           }
         ]
       },
       {
         "appIDs": [
-          "AXJY8ZWA5Q.com.handepay.merchantmobileapp"
+          "P4E7M6729Y.com.handepay.merchantmobileapp"
         ],
         "components": [
           {
-            "/": "/*"
+            "/": "/merchant-mobile-app/app/*"
           }
         ]
       }
