@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Association Server - Sitemap</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #f5f5f5;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-top: 35px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 6px;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      li {
+        margin: 12px 0;
+      }
+
+      a {
+        color: #0b69ff;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      code {
+        background: #eee;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+
+      .note {
+        margin-top: 30px;
+        padding: 16px;
+        border-left: 5px solid orange;
+        background: #fff7d6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Association Server</h1>
+
+    <!-- <p>
+      This page contains links to every public endpoint exposed by this server.
+    </p> -->
+
+    <h2>General Pages</h2>
+
+    <ul>
+      <li><a href="/">/</a> — Sitemap</li>
+      <li><a href="/home">/home</a> — Home page</li>
+      <li><a href="/about">/about</a> — About page</li>
+    </ul>
+
+    <h2>Handepay Merchant Mobile App</h2>
+
+    <ul>
+      <li>
+        <a href="/merchant-mobile-app"> /merchant-mobile-app </a>
+        — Web page
+      </li>
+
+      <li>
+        <a href="/merchant-mobile-app/app"> /merchant-mobile-app/app </a>
+        — Universal Link / Android App Link - redirects to either the store or
+        back to /merchant-mobile-app based on the user agent (mobile vs desktop)
+      </li>
+    </ul>
+
+    <h2>PayPoint Merchant Mobile App</h2>
+
+    <ul>
+      <li>
+        <a href="/paypoint-merchant-mobile-app">
+          /paypoint-merchant-mobile-app
+        </a>
+        — Web page
+      </li>
+
+      <li>
+        <a href="/paypoint-merchant-mobile-app/app">
+          /paypoint-merchant-mobile-app/app
+        </a>
+        — Universal Link / Android App Link - redirects to either the store or
+        back to /paypoint-merchant-mobile-app/app based on the user agent
+        (mobile vs desktop)
+      </li>
+    </ul>
+
+    <h2>Association Files</h2>
+
+    <ul>
+      <li>
+        <a href="/.well-known/apple-app-site-association">
+          /.well-known/apple-app-site-association
+        </a>
+      </li>
+
+      <li>
+        <a href="/.well-known/assetlinks.json">
+          /.well-known/assetlinks.json
+        </a>
+      </li>
+    </ul>
+    <!-- 
+    <div class="note">
+      <strong>Note:</strong>
+      The <code>/merchant-mobile-app/app</code> and
+      <code>/paypoint-merchant-mobile-app/app</code> endpoints are intended for
+      Universal Links (iOS) and Android App Links. Depending on your device,
+      they may open the app, redirect to the App Store/Play Store, or fall back
+      to the corresponding download page.
+    </div> -->
+  </body>
+</html>

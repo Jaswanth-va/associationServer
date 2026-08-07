@@ -4,6 +4,10 @@ import path from "path";
 import express from "express";
 import cors from "cors";
 import fs from "fs";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const PAYPOINT_PLAY_STORE_LINK =
   "https://play.google.com/store/apps/details?id=com.merchant_mobile_app.paypoint&gl=UK";
@@ -29,9 +33,9 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-  const userAgent = req.get("User-Agent");
-  res.send(`<h1>Association Server ${userAgent}</h1>`);
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
 app.get("/home", (req, res) => {
   res.send(`<h1>Home Page</h1>`);
 });
