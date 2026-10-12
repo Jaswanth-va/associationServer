@@ -28,6 +28,9 @@ app.use(
       if (filePath.endsWith("apple-app-site-association")) {
         res.setHeader("Content-Type", "application/json");
       }
+      if (filePath.endsWith("pdf")) {
+        res.setHeader("Content-Type", "application/pdf");
+      }
     },
   }),
 );
